@@ -1,3 +1,3 @@
-Valeria
-Ross
-Alejandro
+- Valeria
+- Ross
+- Alejandro
