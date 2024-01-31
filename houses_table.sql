@@ -1,10 +1,8 @@
 CREATE TABLE houses (
 	house_id SERIAL PRIMARY KEY NOT NULL,
-	location VARCHAR(50),
-	bedrooms INT,
-	bathrooms INT,
-	nightly_price INT,
+	location VARCHAR(50) NOT NULL,
+	bedrooms INT NOT NULL,
+	bathrooms INT NOT NULL,
+	nightly_price INT NOT NULL,
 	description TEXT,
-	review_id INT
-
 );
