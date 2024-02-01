@@ -7,13 +7,14 @@ INSERT INTO
 -- read review
 
 SELECT 
-	*
+	users.name, users.profile, reviews.rating, reviews.content, reviews.date
 FROM 
 	reviews
-WHERE
-	house_id = 1
 INNER JOIN 
-	reviews 
-	ON reviews.house_id = houses.house_id
-;
+	users 
+ON 
+	reviews.user_id = users.user_id
+WHERE
+	users.user_id = 10
+
 
