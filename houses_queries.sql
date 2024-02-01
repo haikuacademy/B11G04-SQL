@@ -17,3 +17,9 @@ WHERE house_id = 1
 -- delete house -query
 DELETE FROM houses 
 WHERE house_id = 2
+
+-- see houses list - query
+SELECT houses.location, houses.bedrooms, houses.bathrooms, houses.nightly_price, houses.review_id, houses.description, photos.url 
+FROM houses
+JOIN photos
+ON photos.house_id = houses.house_id
