@@ -13,3 +13,7 @@ WHERE houses.house_id = 1
 UPDATE houses
 SET location = 'Koh Samui', bedrooms = 2, bathrooms = 7, nightly_price = 10000, description = 'a real shithole'
 WHERE house_id = 1
+
+-- delete house -query
+DELETE FROM houses 
+WHERE house_id = 2
