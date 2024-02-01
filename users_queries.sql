@@ -22,6 +22,6 @@ WHERE
 -- update_profile_query
 
 UPDATE users
-SET profile = 'tgonzpic@hot.com', name = 'tommy', last_name = 'gonzalez', email = 'www.tgonz@hot.com'
+SET profile = 'https://tgonzpic.com', name = 'tommy', last_name = 'gonzalez', email = 'www.tgonz@hot.com'
 WHERE user_id = 10
 ;
