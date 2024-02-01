@@ -8,3 +8,8 @@ FROM houses
 JOIN reviews
 ON houses.house_id = reviews.house_id
 WHERE houses.house_id = 1
+
+-- updating house info -query
+UPDATE houses
+SET location = 'Koh Samui', bedrooms = 2, bathrooms = 7, nightly_price = 10000, description = 'a real shithole'
+WHERE house_id = 1
