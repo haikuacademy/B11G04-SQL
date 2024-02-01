@@ -10,7 +10,7 @@ VALUES
 SELECT bookings.price, bookings.arrival_date, bookings.departure_date, bookings.comment
 FROM 
 	bookings
-	JOIN users
-	ON bookings.user_id = users.user_id
+	JOIN houses
+	ON houses.house_id = bookings.house_id
 WHERE
-    bookings.user_id = 10
+    bookings.house_id = 1
