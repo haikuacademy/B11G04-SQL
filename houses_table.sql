@@ -5,4 +5,5 @@ CREATE TABLE houses (
 	bathrooms INT NOT NULL,
 	nightly_price INT NOT NULL,
 	description TEXT,
+	host_id INT NOT NULL
 );
