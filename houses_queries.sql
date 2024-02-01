@@ -3,10 +3,10 @@ INSERT INTO houses (location, bedrooms, bathrooms, nightly_price, description, h
 VALUES ('Bali', 2, 1, 140, 'Beautiful 2- bedroom house', 1)
 
 -- seeing house listing - query
-SELECT houses.location, houses.nightly_price, houses.bedrooms, houses.bathrooms, houses.description, reviews.review_id
+SELECT houses.location, houses.nightly_price, houses.bedrooms, houses.bathrooms, houses.description, users.user_id
 FROM houses
-JOIN reviews
-ON houses.house_id = reviews.house_id
+JOIN users
+ON users.user_id = houses.host_id
 WHERE houses.house_id = 1
 
 -- updating house info -query
