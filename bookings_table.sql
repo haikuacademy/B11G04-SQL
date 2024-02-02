@@ -5,5 +5,5 @@ CREATE TABLE bookings (
 	price FLOAT NOT NULL,
 	arrival_date DATE NOT NULL,
 	departure_date DATE NOT NULL,
-	nights_number INT NOT NULL
+	comment VARCHAR(100)
 )
